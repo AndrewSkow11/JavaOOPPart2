@@ -2,7 +2,7 @@ public class ServiceStation implements ServiceStationInterface {
 
     @Override
     public void check(Car car) {
-        System.out.println("Обслуживаем " + car.getModelName());
+        System.out.println("\nОбслуживаем " + car.getModelName());
         for (int i = 0; i < car.getWheelsCount(); i++) {
             car.updateTyre();
         }
@@ -11,7 +11,7 @@ public class ServiceStation implements ServiceStationInterface {
 
     @Override
     public void check(Truck truck) {
-        System.out.println("Обслуживаем " + truck.getModelName());
+        System.out.println("\nОбслуживаем " + truck.getModelName());
         for (int i = 0; i < truck.getWheelsCount(); i++) {
             truck.updateTyre();
         }
@@ -21,7 +21,7 @@ public class ServiceStation implements ServiceStationInterface {
 
     @Override
     public void check(Bicycle bicycle) {
-        System.out.println("Обслуживаем " + bicycle.getModelName());
+        System.out.println("\nОбслуживаем " + bicycle.getModelName());
         for (int i = 0; i < bicycle.getWheelsCount(); i++) {
             bicycle.updateTyre();
         }
